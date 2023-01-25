@@ -1,0 +1,8 @@
+training data is not found.
+Test Accuracy :100.000000%
+uae min: -0.3686486901159615,	uae max: 0.3686487079542572
+(40, 48, 48, 3)
+Mean of Norm: 14.209801630619285
+diff of id 0: 14.435190486705988
+Adv. Accuracy :2.500000%
+Acc: 0.025

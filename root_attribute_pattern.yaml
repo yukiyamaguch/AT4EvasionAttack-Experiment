@@ -1,0 +1,146 @@
+NAME: "RootAttack"
+NODE: "Root"
+CHILDREN:
+- NAME: "Digital"
+  NODE: "Attribute"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    WEIGHTS:
+    - 0.5
+    - 0.5
+  - NAME: "Universal"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    WEIGHTS:
+    - 0.5
+    - 0.5
+  WEIGHTS:
+  - 0.5
+  - 0.5
+- NAME: "Physical"
+  NODE: "Attribute"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    WEIGHTS:
+    - 0.5
+    - 0.5
+  - NAME: "Universal"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+      - NODE: "Attribte"
+      - NAME: "Proxy"
+      - NODE: "Attribte"
+      - NAME: "Query"
+      - NODE: "Attribte"
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    WEIGHTS:
+    - 0.5
+    - 0.5
+  WEIGHTS:
+  - 0.5
+  - 0.5
+WEIGHTS:
+- 0.5
+- 0.5

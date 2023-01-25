@@ -1,0 +1,10 @@
+tensorflow==2.11.0
+tensorflow_datasets
+scipy == 1.2.0
+opencv-python
+pillow
+numpy
+sklearn
+adversarial-robustness-toolbox==1.12.2
+imgaug
+pyyaml

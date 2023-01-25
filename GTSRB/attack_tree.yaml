@@ -1,0 +1,269 @@
+NAME: "停止標識の誤認識"
+NODE: "Root"
+CHILDREN:
+- NAME: "Digital"
+  NODE: "Attribute"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "中間者攻撃-RealTime-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AIAttack"
+              ASR: 1.0
+              QUERY: 0
+            - NAME: "FGSM"
+              NODE: "AIAttack"
+              ASR: 0.675
+              QUERY: 0
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "Fullアクセス"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+            - NAME: "割込"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "中間者攻撃-RealTime-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AIAttack"
+              ASR: 0.175
+              QUERY: 0
+            - NAME: "FGSM"
+              NODE: "AIAttack"
+              ASR: 0.25
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "偵察"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "Queryアクセス"
+              NODE: "ConvAttack"
+              AR: 0.5
+              QUERY: 0
+            - NAME: "公開データセット収集"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "出力空間把握"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 215
+            - NAME: "割込"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Query"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "中間者攻撃-RealTime-Query"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AIAttack"
+              ASR: 0.375
+              QUERY: 27446
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "Queryアクセス"
+              NODE: "ConvAttack"
+              AR: 0.5
+              QUERY: 0
+            - NAME: "割込"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.5
+      - 0.4
+    WEIGHTS:
+    - 1.0
+  - NAME: "Universal"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "中間者攻撃-Advance-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "UAP"
+              NODE: "AIAttack"
+              ASR: 0.9
+              QUERY: 0
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "Fullアクセス"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+            - NAME: "割込"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "中間者攻撃-Advance-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "UAP"
+              NODE: "AIAttack"
+              ASR: 0.525
+              QUERY: 0
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "偵察"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "Queryアクセス"
+              NODE: "ConvAttack"
+              AR: 0.5
+              QUERY: 0
+            - NAME: "公開データセット収集"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "出力空間把握"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 215
+            - NAME: "割込"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 0.5
+  - 0.5
+- NAME: "Physical"
+  NODE: "Attribute"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "Attribute"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "Attribute"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "シール攻撃-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "RP2"
+              NODE: "AIAttack"
+              ASR: 1.0
+              QUERY: 0
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "Fullアクセス"
+              NODE: "ConvAttack"
+              AR: 0.1
+              QUERY: 0
+            - NAME: "シール設置"
+              NODE: "ConvAttack"
+              AR: 0.8
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "Attribute"
+        CHILDREN:
+        - NAME: "シール攻撃-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AIAttackList"
+            CHILDREN: 
+            - NAME: "RP2"
+              NODE: "AIAttack"
+              ASR: 0.5
+              QUERY: 0
+            AR: 0.7
+          - NODE: "ConvAttackList"
+            CHILDREN:
+            - NAME: "偵察"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "Queryアクセス"
+              NODE: "ConvAttack"
+              AR: 0.5
+              QUERY: 0
+            - NAME: "公開データセット収集"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 0
+            - NAME: "出力空間把握"
+              NODE: "ConvAttack"
+              AR: 0.9
+              QUERY: 215
+            - NAME: "シール設置"
+              NODE: "ConvAttack"
+              AR: 0.8
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 1.0
+WEIGHTS:
+- 0.3
+- 0.7

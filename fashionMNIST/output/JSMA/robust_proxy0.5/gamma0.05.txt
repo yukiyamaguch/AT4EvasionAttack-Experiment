@@ -1,0 +1,305 @@
+Test Accuracy :94.000000%
+Adv. Accuracy :48.000000%
+i+1=01
+Sneaker    Acc:0.6273736357688904
+Ankle boot Acc:0.30767884850502014
+argmax   :7
+Norm     :2.7038580412474893
+
+i+1=02
+Sneaker    Acc:0.7539478540420532
+Ankle boot Acc:0.07421600818634033
+argmax   :7
+Norm     :3.998597841630831
+
+i+1=03
+Sneaker    Acc:0.03052983433008194
+Ankle boot Acc:0.002672069938853383
+argmax   :8
+Norm     :4.972192232899629
+
+i+1=04
+Sneaker    Acc:0.8976525664329529
+Ankle boot Acc:0.0589490570127964
+argmax   :7
+Norm     :4.273579163534429
+
+i+1=05
+Sneaker    Acc:0.7476218938827515
+Ankle boot Acc:0.004516907501965761
+argmax   :7
+Norm     :5.015351460757047
+
+i+1=06
+Sneaker    Acc:0.32082921266555786
+Ankle boot Acc:0.0988755151629448
+argmax   :5
+Norm     :3.5079601252728074
+
+i+1=07
+Sneaker    Acc:0.8960133790969849
+Ankle boot Acc:0.10135108977556229
+argmax   :7
+Norm     :2.7042488069060324
+
+i+1=08
+Sneaker    Acc:0.8029877543449402
+Ankle boot Acc:0.18285757303237915
+argmax   :7
+Norm     :3.8491686769125057
+
+i+1=09
+Sneaker    Acc:0.6138163208961487
+Ankle boot Acc:0.29364779591560364
+argmax   :7
+Norm     :4.5807272973147475
+
+i+1=10
+Sneaker    Acc:0.6129409670829773
+Ankle boot Acc:0.07154922932386398
+argmax   :7
+Norm     :3.8214025204481428
+
+i+1=11
+Sneaker    Acc:0.680053174495697
+Ankle boot Acc:0.003101672977209091
+argmax   :7
+Norm     :4.970410571828274
+
+i+1=12
+Sneaker    Acc:0.7786641716957092
+Ankle boot Acc:0.09365545213222504
+argmax   :7
+Norm     :4.050848759747007
+
+i+1=13
+Sneaker    Acc:0.8814331293106079
+Ankle boot Acc:0.024546418339014053
+argmax   :7
+Norm     :3.172869263527896
+
+i+1=14
+Sneaker    Acc:0.7582860589027405
+Ankle boot Acc:0.23060095310211182
+argmax   :7
+Norm     :3.4465468594558275
+
+i+1=15
+Sneaker    Acc:0.8126846551895142
+Ankle boot Acc:0.12866537272930145
+argmax   :7
+Norm     :1.3960361776695145
+
+i+1=16
+Sneaker    Acc:0.24019581079483032
+Ankle boot Acc:0.009729553945362568
+argmax   :8
+Norm     :4.985483276004109
+
+i+1=17
+Sneaker    Acc:0.44311344623565674
+Ankle boot Acc:0.5369425415992737
+argmax   :9
+Norm     :3.9921012029853253
+
+i+1=18
+Sneaker    Acc:0.766205370426178
+Ankle boot Acc:0.012891639024019241
+argmax   :7
+Norm     :1.9675602043539997
+
+i+1=19
+Sneaker    Acc:0.02894866280257702
+Ankle boot Acc:0.01129222009330988
+argmax   :8
+Norm     :3.5548945979944713
+
+i+1=20
+Sneaker    Acc:0.628756582736969
+Ankle boot Acc:0.0024418197572231293
+argmax   :7
+Norm     :4.798682742261251
+
+i+1=21
+Sneaker    Acc:0.7324551343917847
+Ankle boot Acc:0.0443950816988945
+argmax   :7
+Norm     :4.08341547898974
+
+i+1=22
+Sneaker    Acc:0.532529890537262
+Ankle boot Acc:0.3205905854701996
+argmax   :7
+Norm     :3.183357112555638
+
+i+1=23
+Sneaker    Acc:0.4418300688266754
+Ankle boot Acc:0.00791886169463396
+argmax   :7
+Norm     :4.385051811221016
+
+i+1=24
+Sneaker    Acc:0.2839837670326233
+Ankle boot Acc:0.032063666731119156
+argmax   :8
+Norm     :4.636750702598588
+
+i+1=25
+Sneaker    Acc:0.02153521031141281
+Ankle boot Acc:0.00245920242741704
+argmax   :8
+Norm     :5.1706072901856714
+
+i+1=26
+Sneaker    Acc:0.2795189619064331
+Ankle boot Acc:0.011945156380534172
+argmax   :8
+Norm     :4.0966042960537825
+
+i+1=27
+Sneaker    Acc:0.6500861644744873
+Ankle boot Acc:0.19696198403835297
+argmax   :7
+Norm     :3.4255212973252886
+
+i+1=28
+Sneaker    Acc:0.02949521318078041
+Ankle boot Acc:0.005530727095901966
+argmax   :8
+Norm     :3.0454403662964715
+
+i+1=29
+Sneaker    Acc:0.6432815790176392
+Ankle boot Acc:0.00364611204713583
+argmax   :7
+Norm     :5.106692833484351
+
+i+1=30
+Sneaker    Acc:0.8400540947914124
+Ankle boot Acc:0.0019228890305384994
+argmax   :7
+Norm     :4.171849382858156
+
+i+1=31
+Sneaker    Acc:0.6974760293960571
+Ankle boot Acc:0.234133780002594
+argmax   :7
+Norm     :4.061477779740755
+
+i+1=32
+Sneaker    Acc:0.6871854066848755
+Ankle boot Acc:0.0073310500010848045
+argmax   :7
+Norm     :3.315221859324611
+
+i+1=33
+Sneaker    Acc:0.803409218788147
+Ankle boot Acc:0.12971840798854828
+argmax   :7
+Norm     :2.769749909785519
+
+i+1=34
+Sneaker    Acc:0.7091422080993652
+Ankle boot Acc:0.22427527606487274
+argmax   :7
+Norm     :3.2138486972454823
+
+i+1=35
+Sneaker    Acc:0.8031468391418457
+Ankle boot Acc:0.1825748085975647
+argmax   :7
+Norm     :3.3123393238660266
+
+i+1=36
+Sneaker    Acc:0.3803419768810272
+Ankle boot Acc:0.05162684619426727
+argmax   :8
+Norm     :5.0155944316555345
+
+i+1=37
+Sneaker    Acc:0.03690504655241966
+Ankle boot Acc:0.0024286769330501556
+argmax   :8
+Norm     :4.950028367477883
+
+i+1=38
+Sneaker    Acc:0.7647167444229126
+Ankle boot Acc:0.17292030155658722
+argmax   :7
+Norm     :4.899128894378018
+
+i+1=39
+Sneaker    Acc:0.8468899130821228
+Ankle boot Acc:0.044972553849220276
+argmax   :7
+Norm     :4.173651440254007
+
+i+1=40
+Sneaker    Acc:0.26713043451309204
+Ankle boot Acc:0.028543414548039436
+argmax   :8
+Norm     :4.5307893357129565
+
+i+1=41
+Sneaker    Acc:0.8507652878761292
+Ankle boot Acc:0.09276257455348969
+argmax   :7
+Norm     :2.736695019672677
+
+i+1=42
+Sneaker    Acc:0.5083178877830505
+Ankle boot Acc:0.0812535434961319
+argmax   :7
+Norm     :3.354004712396005
+
+i+1=43
+Sneaker    Acc:0.8694557547569275
+Ankle boot Acc:0.12843357026576996
+argmax   :7
+Norm     :2.7653623507632537
+
+i+1=44
+Sneaker    Acc:0.8049734234809875
+Ankle boot Acc:0.08783263713121414
+argmax   :7
+Norm     :4.113115048724657
+
+i+1=45
+Sneaker    Acc:0.21718597412109375
+Ankle boot Acc:0.019636116921901703
+argmax   :8
+Norm     :4.488458661471862
+
+i+1=46
+Sneaker    Acc:0.11995796859264374
+Ankle boot Acc:0.021751072257757187
+argmax   :8
+Norm     :4.6693100421120945
+
+i+1=47
+Sneaker    Acc:0.47528180480003357
+Ankle boot Acc:0.04730015620589256
+argmax   :7
+Norm     :4.990580374906734
+
+i+1=48
+Sneaker    Acc:0.678991436958313
+Ankle boot Acc:0.24113953113555908
+argmax   :7
+Norm     :4.210664305706997
+
+i+1=49
+Sneaker    Acc:0.4365803599357605
+Ankle boot Acc:0.14706195890903473
+argmax   :7
+Norm     :3.8516406154919625
+
+i+1=50
+Sneaker    Acc:0.20078887045383453
+Ankle boot Acc:0.041764575988054276
+argmax   :8
+Norm     :5.347126450809615
+
+Attack Success Rate: 0.30000000000000004
+Mean of Norm: 3.956731960316333
+Hyperparameter gamma: 0.05
