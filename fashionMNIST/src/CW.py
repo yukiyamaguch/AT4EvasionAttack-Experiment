@@ -12,7 +12,7 @@ from model import victim_model
 from utils import l2_norm_of_perturbation
 
 tf.compat.v1.disable_eager_execution()
-parser = argparse.ArgumentParser(description='FGSM test program')
+parser = argparse.ArgumentParser(description='Carlini and Wagner attack test program')
 parser.add_argument('--AK', choices=['white',
                                      'proxy',
                                      'proxy0.5',

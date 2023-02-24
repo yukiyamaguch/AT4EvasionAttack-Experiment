@@ -11,7 +11,7 @@ from model import victim_model
 from utils import l2_norm_of_perturbation
 
 tf.compat.v1.disable_eager_execution()
-parser = argparse.ArgumentParser(description='FGSM test program')
+parser = argparse.ArgumentParser(description='Jacobian Saliency Map Attack test program')
 parser.add_argument('--AK', choices=['white', 'proxy'], help='Attacker\'s Knowledge.')
 parser.add_argument('--gamma', type=float, default=0.05, help='hyperparameter')
 parser.add_argument('--output_path', help='save image path')

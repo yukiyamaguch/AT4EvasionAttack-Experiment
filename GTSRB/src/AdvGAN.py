@@ -203,7 +203,7 @@ def generate_AE():
     # proxy
     #generator = tf.keras.models.load_model('model/proxy_generator')
     # distil
-    generator = tf.keras.models.load_model('model/distil_generator')
+    #generator = tf.keras.models.load_model('model/distil_generator')
     victim_model = tf.keras.models.load_model('model/checkpoint')
     _,_,testX, testY = gtsrb(None, 'dataset/victim', (48,48))
     #imgs, _ = read_imgs_from_dir('dataset/victim')

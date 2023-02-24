@@ -11,7 +11,7 @@ from model import victim_model
 from utils import l2_norm_of_perturbation
 
 tf.compat.v1.disable_eager_execution()
-parser = argparse.ArgumentParser(description='FGSM test program')
+parser = argparse.ArgumentParser(description='Universal Adversarial Perturbation test program')
 parser.add_argument('--AK', choices=['white', 'proxy'], help='Attacker\'s Knowledge.')
 parser.add_argument('--eps', type=float, default=1.0, help='hyperparameter')
 parser.add_argument('--delta', type=float, default=0.1, help='hyperparameter')
