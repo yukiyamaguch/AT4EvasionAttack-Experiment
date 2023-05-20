@@ -1,0 +1,271 @@
+NAME: "停止標識の誤認識"
+NODE: "Root"
+CHILDREN:
+- NAME: "Digital"
+  NODE: "AEA"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AEM"
+              ERR: 1.0
+              AP: 0.7
+              QUERY: 0
+            - NAME: "FGSM"
+              NODE: "AEM"
+              ERR: 0.675
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AEM"
+              ERR: 0.175
+              AP: 0.7
+              QUERY: 0
+            - NAME: "FGSM"
+              NODE: "AEM"
+              ERR: 0.25
+              AP: 0.9
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Reconnaissance"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Model Query Access"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Confirm Model Output"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 215
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Query"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-Query"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "AdvGAN"
+              NODE: "AEM"
+              ERR: 0.375
+              AP: 0.7
+              QUERY: 27446
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Model Query Access"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.3
+      - 0.6
+    WEIGHTS:
+    - 1.0
+  - NAME: "Universal"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-Advance-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.9
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Model Full Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-Advance-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.525
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Reconnaissance"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Model Query Access"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 215
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 0.5
+  - 0.5
+- NAME: "Physical"
+  NODE: "AEA"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "StickerAttack-White"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "RP2"
+              NODE: "AEM"
+              ERR: 1.0
+              AP: 0.7
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Model Full Acess"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Put Stickers"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "StickerAttack-Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN: 
+            - NAME: "RP2"
+              NODE: "AEM"
+              ERR: 0.5
+              AP: 0.7
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Reconnaissance"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Model Query Access"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 215
+            - NAME: "Put Stickers"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 1.0
+WEIGHTS:
+- 0.3
+- 0.7
