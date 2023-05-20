@@ -1,0 +1,233 @@
+NAME: "Fool Item Classifier"
+NODE: "Root"
+CHILDREN:
+- NAME: "Digital"
+  NODE: "AEA"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Send AE by API white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "BIM"
+              NODE: "AEM"
+              ERR: 0.26
+              AP: 0.9
+              QUERY: 0
+            - NAME: "CW"
+              NODE: "AEM"
+              ERR: 0.32
+              AP: 0.9
+              QUERY: 0
+            - NAME: "DeepFool"
+              NODE: "AEM"
+              ERR: 0.22
+              AP: 0.9
+              QUERY: 0
+            - NAME: "PGD"
+              NODE: "AEM"
+              ERR: 0.52
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+        WEIGHTS:
+          - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Send AE by API proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "BIM"
+              NODE: "AEM"
+              ERR: 0.36
+              AP: 0.9
+              QUERY: 0
+            - NAME: "CW"
+              NODE: "AEM"
+              ERR: 0.22
+              AP: 0.9
+              QUERY: 0
+            - NAME: "DeepFool"
+              NODE: "AEM"
+              ERR: 0.08
+              AP: 0.9
+              QUERY: 0
+            - NAME: "PGD"
+              NODE: "AEM"
+              ERR: 0.78
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Reconnaissance"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.07
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+        WEIGHTS:
+          - 1.0
+      - NAME: "Query"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Send AE by API query"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "Boundary Attack"
+              NODE: "AEM"
+              ERR: 0.6
+              AP: 0.9
+              QUERY: 1000
+            - NAME: "GeoDA"
+              NODE: "AEM"
+              ERR: 0.4
+              AP: 0.9
+              QUERY: 300
+            - NAME: "HopSkipJump Attack"
+              NODE: "AEM"
+              ERR: 0.32
+              AP: 0.9
+              QUERY: 500
+            - NAME: "SimBA"
+              NODE: "AEM"
+              ERR: 0.56
+              AP: 0.9
+              QUERY: 100
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.07
+              QUERY: 0
+        WEIGHTS:
+          - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.3
+      - 0.6
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 1.0
+- NAME: "Physical"
+  NODE: "AEA"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Send AE by API proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "Adversarial Patch"
+              NODE: "AEM"
+              ERR: 0.16
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+        WEIGHTS:
+          - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Send AE by API proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "Adversarial Patch"
+              NODE: "AEM"
+              ERR: 0.14
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Reconnaissance"
+              NODE: "CA"
+              AP: 0.05
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.07
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.08
+              QUERY: 0
+        WEIGHTS:
+          - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 1.0
+WEIGHTS:
+- 0.5
+- 0.5
