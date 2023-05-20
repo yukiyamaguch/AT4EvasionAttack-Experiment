@@ -1,4 +1,4 @@
-NAME: "停止標識の誤認識"
+NAME: "Misclassify Stop Sign"
 NODE: "Root"
 CHILDREN:
 - NAME: "Digital"
