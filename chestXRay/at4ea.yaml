@@ -1,0 +1,310 @@
+NAME: "Fool Pneumonia Diagnosis"
+NODE: "Root"
+CHILDREN:
+- NAME: "Digital"
+  NODE: "AEA"
+  CHILDREN:
+  - NAME: "Individual"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "1-Step"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "FGSM"
+              NODE: "AEM"
+              ERR: 0.72
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "FGSM"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.06
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 10
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.02
+              QUERY: 10
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Put AE into the DB white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "BIM"
+              NODE: "AEM"
+              ERR: 0.78
+              AP: 0.9
+              QUERY: 0
+            - NAME: "CW"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+            - NAME: "DeepFool"
+              NODE: "AEM"
+              ERR: 0.08
+              AP: 0.9
+              QUERY: 0
+            - NAME: "PGD"
+              NODE: "AEM"
+              ERR: 0.86
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "Put AE into the DB proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "BIM"
+              NODE: "AEM"
+              ERR: 0.42
+              AP: 0.9
+              QUERY: 0
+            - NAME: "CW"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+            - NAME: "DeepFool"
+              NODE: "AEM"
+              ERR: 0.14
+              AP: 0.9
+              QUERY: 0
+            - NAME: "PGD"
+              NODE: "AEM"
+              ERR: 0.02
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.06
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 10
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.02
+              QUERY: 0
+        WEIGHTS:
+        - 1.0
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 0.5
+    - 0.5
+  - NAME: "Universal"
+    NODE: "AEA"
+    CHILDREN:
+    - NAME: "Iterative"
+      NODE: "AEA"
+      CHILDREN:
+      - NAME: "WhiteBox"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-Advance-white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        - NAME: "Put AE into the DB Advance white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Full Model Access"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+        WEIGHTS:
+        - 0.3
+        - 0.7
+      - NAME: "Proxy"
+        NODE: "AEA"
+        CHILDREN:
+        - NAME: "MITM-RealTime-white"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.06
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 10
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.02
+              QUERY: 0
+            - NAME: "Inject AE"
+              NODE: "CA"
+              AP: 0.01
+              QUERY: 0
+        - NAME: "Put AE into the DB Advance Proxy"
+          NODE: "Scenario"
+          CHILDREN:
+          - NODE: "AEML"
+            CHILDREN:
+            - NAME: "UAP"
+              NODE: "AEM"
+              ERR: 0.0
+              AP: 0.9
+              QUERY: 0
+          - NODE: "CAL"
+            CHILDREN:
+            - NAME: "Get Account"
+              NODE: "CA"
+              AP: 0.03
+              QUERY: 0
+            - NAME: "Query Model Access"
+              NODE: "CA"
+              AP: 0.06
+              QUERY: 0
+            - NAME: "Confirm Output Space"
+              NODE: "CA"
+              AP: 0.09
+              QUERY: 10
+            - NAME: "Collect Public Dataset"
+              NODE: "CA"
+              AP: 0.02
+              QUERY: 0
+        WEIGHTS:
+        - 0.3
+        - 0.7
+      WEIGHTS:
+      - 0.1
+      - 0.9
+    WEIGHTS:
+    - 1.0
+  WEIGHTS:
+  - 0.7
+  - 0.3
+WEIGHTS:
+- 1.0
