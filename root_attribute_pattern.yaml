@@ -2,33 +2,33 @@ NAME: "RootAttack"
 NODE: "Root"
 CHILDREN:
 - NAME: "Digital"
-  NODE: "Attribute"
+  NODE: "AEA"
   CHILDREN:
   - NAME: "Individual"
-    NODE: "Attribute"
+    NODE: "AEA"
     CHILDREN:
     - NAME: "1-Step"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
       - 0.4
     - NAME: "Iterative"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
@@ -37,30 +37,30 @@ CHILDREN:
     - 0.5
     - 0.5
   - NAME: "Universal"
-    NODE: "Attribute"
+    NODE: "AEA"
     CHILDREN:
     - NAME: "1-Step"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
       - 0.4
     - NAME: "Iterative"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
@@ -72,33 +72,33 @@ CHILDREN:
   - 0.5
   - 0.5
 - NAME: "Physical"
-  NODE: "Attribute"
+  NODE: "AEA"
   CHILDREN:
   - NAME: "Individual"
-    NODE: "Attribute"
+    NODE: "AEA"
     CHILDREN:
     - NAME: "1-Step"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
       - 0.4
     - NAME: "Iterative"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
@@ -107,30 +107,30 @@ CHILDREN:
     - 0.5
     - 0.5
   - NAME: "Universal"
-    NODE: "Attribute"
+    NODE: "AEA"
     CHILDREN:
     - NAME: "1-Step"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
       - 0.4
     - NAME: "Iterative"
-      NODE: "Attribute"
+      NODE: "AEA"
       CHILDREN:
       - NAME: "WhiteBox"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Proxy"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       - NAME: "Query"
-      - NODE: "Attribte"
+      - NODE: "AEA"
       WEIGHTS:
       - 0.1
       - 0.5
