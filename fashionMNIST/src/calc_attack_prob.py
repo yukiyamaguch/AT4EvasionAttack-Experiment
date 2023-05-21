@@ -1,5 +1,6 @@
 from yaml import safe_load
 import numpy as np
+import sys
 
 def calc_AP(t):
     if t["NODE"] == "Root":
@@ -21,7 +22,7 @@ def calc_AP(t):
         print(t)
         exit()
 
-with open('at4ea.yaml', 'r') as yml:
+with open(sys.argv[1], 'r') as yml:
     tree = safe_load(yml)
 
 print(f'Root:     {calc_AP(tree)}')
