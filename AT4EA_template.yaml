@@ -1,3 +1,7 @@
+# AT4EA template file.
+# It consists of all combinations of AEA nodes.
+# You can remove the not required nodeds,
+# and add required Scenario, AEM, CA nodes.
 NAME: "RootAttack"
 NODE: "Root"
 CHILDREN:
@@ -18,8 +22,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     - NAME: "Iterative"
       NODE: "AEA"
       CHILDREN:
@@ -31,8 +35,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     WEIGHTS:
     - 0.5
     - 0.5
@@ -50,8 +54,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     - NAME: "Iterative"
       NODE: "AEA"
       CHILDREN:
@@ -63,8 +67,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     WEIGHTS:
     - 0.5
     - 0.5
@@ -88,8 +92,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     - NAME: "Iterative"
       NODE: "AEA"
       CHILDREN:
@@ -101,8 +105,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     WEIGHTS:
     - 0.5
     - 0.5
@@ -120,8 +124,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     - NAME: "Iterative"
       NODE: "AEA"
       CHILDREN:
@@ -133,8 +137,8 @@ CHILDREN:
         NODE: "AEA"
       WEIGHTS:
       - 0.1
-      - 0.5
-      - 0.4
+      - 0.3
+      - 0.6
     WEIGHTS:
     - 0.5
     - 0.5
