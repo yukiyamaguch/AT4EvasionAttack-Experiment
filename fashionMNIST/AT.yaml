@@ -194,7 +194,7 @@ CHILDREN:
             CHILDREN:
             - NAME: "Adversarial Patch"
               NODE: "AEM"
-              ERR: 0.14
+              ERR: 0.04
               AP: 0.9
               QUERY: 0
           - NODE: "CAL"
