@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - - -
 We show the table of experiment systems and using datasets.
 
-| system                    | datase                |
+| system                    | dataset               |
 |:--------------------------|:---------------------:|
 | Road Sign Classification  | GTSRB[1]              |
 | Pneumonia Classification  | Pneumonia dataset[2]  |
