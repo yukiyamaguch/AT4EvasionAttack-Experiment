@@ -1,8 +1,5 @@
 # Road Sign Classification Experiment
 
-## System
-- - -
-
 ## Adversarial Example Matrix
 - - -
 We show the adversarial example matrix in this experiment below.
@@ -20,7 +17,7 @@ We show the evasion attack matrix in this experiment below.
 |:---------|:--:|:--:|:--:|:--:|:------------------|:----------------|
 | Man In The Middle (MITM) - RealTime(*W) | Digital   | Individual | 1-Step    | WhiteBox |Full Model Access|AdvGAN|
 | | | | | | Inject AE|FGSM|
-| MITM - RealTime(P)                     | Physical  | Individual | 1-Step    | Proxy    |Reconnaissance|AdvGAN|
+| MITM - RealTime(P)                     | Digital   | Individual | 1-Step    | Proxy    |Reconnaissance|AdvGAN|
 | | | | | | Model Query Access|FGSM|
 | | | | | | Collect Public Dataset||
 | | | | | | Confirm Model Output||
