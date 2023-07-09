@@ -101,5 +101,7 @@ We show the edge weights of Root and AEA node in this experiment.
 ### Results of AT4EA Calculation.
 We show the attack probability and minimum query for evasion attack below.
 
+|Calculation | Value|
+| :---  | :---: |
 |Attack Probability|$5.39 \times 10^{-5}$|
 |Minimum Query|$215$|
