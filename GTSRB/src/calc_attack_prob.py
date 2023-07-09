@@ -21,7 +21,7 @@ def calc_AP(t):
         print(t)
         exit()
 
-with open('attack_tree.yaml', 'r') as yml:
+with open('at4ea.yaml', 'r') as yml:
     tree = safe_load(yml)
 
 print(f'Root:     {calc_AP(tree)}')
