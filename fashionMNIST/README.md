@@ -1,6 +1,6 @@
 # Item Classification System Experiment
 
-## Adversarial Example Matrix
+## Method Matrix
 - - -
 We show the adversarial example matrix in this experiment below.
 | Method |Perturbation Visibility|Perturbation Scope|Attack Computation|Attacker's Knowledge  |

@@ -17,6 +17,29 @@ Then, you can install nesesary libraries.
 pip install -r requirements.txt
 ```
 
+## Settings
+We trained the classifiers on these datasets using the Keras framework.
+The evasion attacks on these systems are shown below.
+- The intentional error of stop sign recognition: the attack on human safety during the road sign recognition task.
+- Wrong diagnosis versus normal diagnosis: a menace to the reliability of an ML provider in the pneumonia diagnosis task.
+- The intentional misclassification of an item: the mischief to inject poisoned data into the item classification task.
+In this experiment, the adversarial example matrix consists of methods with unique attributes.
+
+The evasion attacks are identified, including all methods in the matrix.
+Then, our method translates the scenarios to the AT4EA using the pattern.
+We train the classifiers to calculate their error rates using adversarial examples in the three different systems.
+We calculate the error rates of the classifiers to assess the risk of each system.
+The test dataset consists of 50 images.
+Each method generates adversarial examples with noise sizes less than the constants.
+The codes of the methods consist of 11 programs from the ART library and two programs we wrote.
+Furthermore, the methods in the black-box setting assign appropriate query parameters to restrict the size of the adversarial example below a certain value.
+The attack probabilities of CA nodes have values between 0.1 and 0.01.
+We set the weights of edges to the attacker's knowledge nodes to be white-box: 0.1, black-box (proxy): 0.3, black-box (query): 0.6 or white-box: 0.1, and black-box (proxy): 0.9.
+Other weights depend on each system.
+The frequency of AEM nodes packaged in the ART library is 0.9, and that of the others is 0.7.
+
+
+
 ## Experiments
 - - -
 We show the table of experiment systems and using datasets.

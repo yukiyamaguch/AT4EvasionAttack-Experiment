@@ -12,7 +12,7 @@ def calc_AP(t):
     elif t["NODE"] == "AEML":
         return max([calc_AP(t["CHILDREN"][i]) for i in range(len(t["CHILDREN"]))])
     elif t["NODE"] == "AEM":
-        return t["ERR"]*t["AP"]
+        return t["ERR"]*t["FREQ"]
     elif t["NODE"] == "CAL":
         return np.prod([calc_AP(t["CHILDREN"][i]) for i in range(len(t["CHILDREN"]))])
     elif t["NODE"] == "CA":

@@ -21,7 +21,7 @@ CHILDREN:
             - NAME: "FGSM"
               NODE: "AEM"
               ERR: 0.72
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -50,7 +50,7 @@ CHILDREN:
             - NAME: "FGSM"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -93,22 +93,22 @@ CHILDREN:
             - NAME: "BIM"
               NODE: "AEM"
               ERR: 0.78
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "CW"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "DeepFool"
               NODE: "AEM"
               ERR: 0.08
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "PGD"
               NODE: "AEM"
               ERR: 0.86
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -133,22 +133,22 @@ CHILDREN:
             - NAME: "BIM"
               NODE: "AEM"
               ERR: 0.42
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "CW"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "DeepFool"
               NODE: "AEM"
               ERR: 0.14
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
             - NAME: "PGD"
               NODE: "AEM"
               ERR: 0.02
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -193,7 +193,7 @@ CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -217,7 +217,7 @@ CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -243,7 +243,7 @@ CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -275,7 +275,7 @@ CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
               ERR: 0.0
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:

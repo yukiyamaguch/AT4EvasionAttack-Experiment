@@ -17,16 +17,16 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "AdvGAN"
               NODE: "AEM"
               ERR: 1.0
-              AP: 0.7
+              FREQ: 0.7
               QUERY: 0
             - NAME: "FGSM"
               NODE: "AEM"
               ERR: 0.675
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -47,16 +47,16 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "AdvGAN"
               NODE: "AEM"
               ERR: 0.175
-              AP: 0.7
+              FREQ: 0.7
               QUERY: 0
             - NAME: "FGSM"
               NODE: "AEM"
               ERR: 0.25
-              AP: 0.9
+              FREQ: 0.9
           - NODE: "CAL"
             CHILDREN:
             - NAME: "Reconnaissance"
@@ -88,11 +88,11 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "AdvGAN"
               NODE: "AEM"
               ERR: 0.375
-              AP: 0.7
+              FREQ: 0.7
               QUERY: 27446
           - NODE: "CAL"
             CHILDREN:
@@ -125,11 +125,11 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
               ERR: 0.9
-              AP: 0.9
+              FREQ: 0.9
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -150,10 +150,10 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "UAP"
               NODE: "AEM"
-              ERR: 0.525
+              FREQ: 0.525
               AP: 0.9
               QUERY: 0
           - NODE: "CAL"
@@ -204,11 +204,11 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "RP2"
               NODE: "AEM"
               ERR: 1.0
-              AP: 0.7
+              FREQ: 0.7
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
@@ -229,11 +229,11 @@ CHILDREN:
           NODE: "Scenario"
           CHILDREN:
           - NODE: "AEML"
-            CHILDREN: 
+            CHILDREN:
             - NAME: "RP2"
               NODE: "AEM"
               ERR: 0.5
-              AP: 0.7
+              FREQ: 0.7
               QUERY: 0
           - NODE: "CAL"
             CHILDREN:
